@@ -1,16 +1,16 @@
 <!-- Unit 5 Project
 Requirements
-[  ] <div> and <span>
-[  ] border:, margin:, and padding: 
-[  ] Three Images
+[ yes ] <div> and <span>
+[ yes ] border:, margin:, and padding: 
+[ yes ] Three Images
 
 Select TWO Additional Features to Add  
 [ no ] Feature 1 - Flexbox
 [ no ] Feature 2 - Flip Card
 [ no ] Feature 3 - Animation
 [ no ] Feature 4 - Linear Gradient
-[ no ] Feature 5 - Use a .Gif
-[ no ] Feature 6 - Unique Border Styles
+[ yes ] Feature 5 - Use a .Gif
+[ yes ] Feature 6 - Unique Border Styles
 -->
 
 
@@ -28,6 +28,7 @@ body {
   background-image: url(https://64.media.tumblr.com/c2b0fbf858423ba833e35a5ad0e2c58c/tumblr_noq334n44a1r5lq2qo3_500.gif); 
   background-size: 2000px;
   background-attachment: fixed;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌻</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 
   ul {
@@ -46,8 +47,8 @@ body {
       li a {
         text-decoration: none;
         padding: 100px;
-        background-color: rgb(221, 211, 177);
-        color: rgb(143, 99, 41);
+        background-color: rgb(180, 161, 125);
+        color: rgb(100, 62, 13);
         font-family: 'Courier New', Courier, monospace;
       }
 
@@ -60,11 +61,59 @@ body {
   font-family: "Playwrite NZ Guides", cursive;
   font-weight: 400;
   font-style: normal;
+  color: rgb(221, 211, 177);
       }
 
       table {
-        border: 25px;
+        display:inline-block;
+  /* width:30%; */
+  margin:5% auto;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding:1em;
+  line-height:1.5em;
+  background:rgb(221, 211, 177);
+  padding: 14px;
       }
+
+      .border {
+        width: 300px; 
+        border: 5px, solid;
+        border-color: rgb(104, 60, 30);
+        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+        margin: 10px;
+        
+
+        
+      }
+
+      td {
+        width: 200px;
+      }
+
+      p {
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(221, 211, 177);
+      }
+      .title {
+        font-size: 55px;
+         font-family: "Playwrite NZ Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(56, 33, 19);
+      }
+
+      .text {
+        font-family: cursive;
+        color: rgb(50, 26, 12);
+      }
+
+      div {
+        width: 140px; position:fixed; bottom:5px; right:5px; z-index:3;
+      }
+
+       a:hover {
+      cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌱</text></svg>") 16 0,auto;
+       }
   </style>
 </head>
 <body>
@@ -74,21 +123,43 @@ body {
       <li><a href="commissions.html">Commissions</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="tos.html">TOS</a></li>
-      <li id="white">   ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ₊˚⛅.ೃ࿔*:🌻･ 𝔄𝔰 𝔱𝔥𝔢 𝔰𝔢𝔞𝔰𝔬𝔫𝔰 𝔠𝔥𝔞𝔫𝔤𝔢, 𝔴𝔬𝔫'𝔱 𝔶𝔬𝔲 𝔰𝔱𝔞𝔶 𝔟𝔶 𝔪𝔢? ⋆.ೃ࿔* :･🌱⋆.ೃ࿔* :･:･</li>
+      <li id="white">   ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ₊˚⛅.ೃ࿔*:🌻･ 𝔄𝔰 𝔱𝔥𝔢 𝔰𝔢𝔞𝔰𝔬𝔫𝔰 𝔠𝔥𝔞𝔫𝔤𝔢, 𝔴𝔬𝔫𝔱 𝔶𝔬𝔲 𝔰𝔱𝔞𝔶 𝔟𝔶 𝔪𝔢? ⋆.ೃ࿔* :･🌱⋆.ೃ࿔* :･:･ </li>
   </ul>
 
   <center>
-<h1><br><Br><Br><br> Commissions </h1>
+<h1><br><Br><Br><br> Home </h1>
 <p>Get to know me, I love making new friends :3</p>
 
 <table>
-<thead>
-  <tr>
-    
-  </tr>
-</thead>
+  <tbody>
+    <tr>
+      <td>
+        <span class="title">Profile </span> <br>🌱<br> <span class="text">Lorem ipsum dolor sit amet... I may have given up making this website halfway through. Hrugggg Ill do better next time ~_~ <br><br> Well have fun looking at my little teenie personas :333 <br><br> I love them very much (to death) </span>
+      </td>
+      <td>🌿⚘.⋆˚࿔🍃༄<br><img class="border" src="https://i.pinimg.com/originals/55/0c/f9/550cf97be61283397f97960c66354b78.gif" alt="image"
+      </td>
+      <td><img class="border" src="https://f2.toyhou.se/file/f2-toyhou-se/images/101868895_HIUjtyzhcNryasO.jpg" alt="3artho">
+      </td>
+    </tr>
+    <tr>
+      <td><img class="border" src="https://f2.toyhou.se/file/f2-toyhou-se/images/86615761_DgEjf0WS5p7UScr.png?1723203698" alt=""></td>
+      <td class="text"><span class="title">About Me </span> <br>🌱<br>
+        I love the color brown SO MUCHHHHHHH<br> (and green as of late) <br> I love nature too <br> That is all...
+
+      </td>
+      <td>˚˖𓍢ִ໋`🌿:✧˚.📷⋆𖧧<br><img class="border" src="https://i0.wp.com/media3.giphy.com/media/dU97uV3UyP0ly/giphy.gif" alt=""></td>
+    </tr>
+
+  </tbody>
 </table>
 
+<div>
+        <div class="mx-md-0 mx-1 col-md-auto col">
+        <img id="doll" src="https://f2.toyhou.se/file/f2-toyhou-se/images/94966139_tYBGaS71GSlHzgr.gif">
+        </div>
+<div>
   </center>
 </body>
-</html>
+
+
+</html>                
